@@ -24,7 +24,7 @@ class ViewTestCase(TestCase):
             reverse('create'),
             self.info_data,
             format="json")
-
-    def test_api_can_create_a_Info(self):
+    def test_api_can_create_a_info(self):
         self.assertEqual(self.response.status_code, status.HTTP_201_CREATED)
+
 
